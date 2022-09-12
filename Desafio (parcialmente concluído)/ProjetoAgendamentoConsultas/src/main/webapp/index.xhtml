@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c_rt="http://java.sun.com/jstl/core_rt"
+      xmlns:x_rt="http://java.sun.com/jstl/xml_rt"
+      xmlns:p="http://primefaces.org/ui">
+
+	<h:head></h:head>
+	<h:body>
+		<h:form>
+			<p:fieldset legend="Agendamento: Marcação">
+			
+				<p:panelGrid columns="2">
+					<h:outputLabel value="Nome do Médico: " for="nomeMedico_Agendamento"></h:outputLabel>
+					<p:inputText id="nomeMedico_Agendamento" value=""></p:inputText>
+					
+					<h:outputLabel value="Especialidade: " for="especialidade_Agendamento"></h:outputLabel>
+					<p:inputText id="especialidade_Agendamento" value=""></p:inputText>
+										
+					<h:outputLabel value="Dia: " for="dia_Agendamento"></h:outputLabel>
+					<p:inputText id="dia_Agendamento" value=""></p:inputText>
+					
+					<h:outputLabel value="Horário: " for="horario_Agendamento"></h:outputLabel>
+					<p:inputMask id="horario_Agendamento" value="" mask="99:99"></p:inputMask>
+					
+					<h:outputLabel value="Nome do Paciente: " for="nomePaciente_Agendamento"></h:outputLabel>
+					<p:inputMask id="nomePaciente_Agendamento" value=""></p:inputMask>
+					
+					<h:outputLabel value="Telefone: " for="telefone_Agendamento"></h:outputLabel>
+					<p:inputMask id="telefone_Agendamento" value="" mask="(99)99999-9999"></p:inputMask>
+					
+					<h:outputLabel value="E-mail: " for="email_Agendamento"></h:outputLabel>
+					<p:inputText id="email_Agendamento" value=""></p:inputText>
+					
+					
+					<h:outputLabel value="Observações: " for="observacoes_Agendamento"></h:outputLabel>
+					<p:inputText id="observacoes_Agendamento" value=""></p:inputText>
+					
+					<p:commandButton id="btnEnviar" value="Enviar" ></p:commandButton>
+					
+				</p:panelGrid>
+				
+			</p:fieldset>
+				
+				
+			
+		</h:form>
+	</h:body>
+	
+	
+</html>

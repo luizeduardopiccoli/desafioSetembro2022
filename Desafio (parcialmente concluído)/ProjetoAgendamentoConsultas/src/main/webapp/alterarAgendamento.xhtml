@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c_rt="http://java.sun.com/jstl/core_rt"
+      xmlns:x_rt="http://java.sun.com/jstl/xml_rt"
+      xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+	 <title>Clinica Health Care</title>
+	</h:head>
+	
+	<h:body>
+		<h:form>
+			<p:fieldset legend="Agendamento: Alteração">
+			
+				<p:panelGrid columns="2">
+				<h:outputLabel value="Nome do Médico: " for="nomeMedico_Agendamento"></h:outputLabel>
+				
+				<h:outputLabel>
+				
+				<div class="card">
+					<h:form>
+
+						<div class="ui-fluid formgrid grid">
+							<div class="field col-12 md:col-4">
+								<p:outputLabel for="@next" value="" />
+								<p:selectOneMenu id="option"
+									value="#{selectOneMenuView.selectedOption}">
+									<f:selectItem itemLabel="Selecione um médico" itemValue="" />
+									<f:selectItem itemLabel="Dr. Alberto Almeida" itemValue="Dr. Alberto Almeida" />
+									<f:selectItem itemLabel="Dr. Beatriz Barbosa" itemValue="Dr. Beatriz Barbosa" />
+									<f:selectItem itemLabel="Dr. Cristina Camargo" itemValue="Dr. Cristina Camargo" />
+									<f:facet name="footer">
+										<p:divider styleClass="mt-0" />
+										<h:outputText value="3 opções" style="font-weight:bold;" />
+									</f:facet>
+								</p:selectOneMenu>
+							</div>
+						</div>
+					</h:form>
+				</div>
+
+				</h:outputLabel>
+
+							
+
+				<h:outputLabel value="Especialidade: " for="especialidade_Agendamento"></h:outputLabel>
+
+<h:outputLabel>
+				
+				<div class="card">
+					<h:form>
+
+						<div class="ui-fluid formgrid grid">
+							<div class="field col-12 md:col-4">
+								<p:outputLabel for="@next" value="" />
+								<p:selectOneMenu id="option"
+									value="#{selectOneMenuView.selectedOption}">
+									<f:selectItem itemLabel="Selecione uma especialidade" itemValue="" />
+									<f:selectItem itemLabel="Clinica Geral" itemValue="Clinica Geral" />
+									<f:selectItem itemLabel="Dermatologia" itemValue="Dermatologia" />
+									<f:selectItem itemLabel="Ortopedia" itemValue="Ortopedia" />
+									<f:facet name="footer">
+										<p:divider styleClass="mt-0" />
+										<h:outputText value="3 opções" style="font-weight:bold;" />
+									</f:facet>
+								</p:selectOneMenu>
+							</div>
+						</div>
+					</h:form>
+				</div>
+
+				</h:outputLabel>
+
+
+				<h:outputLabel value="Dia: " for="dia_Agendamento">
+				</h:outputLabel>
+
+				<h:outputLabel>
+				
+				<div class="card">
+					<h:form>
+
+						<div class="ui-fluid formgrid grid">
+							<div class="field col-12 md:col-4">
+								<p:outputLabel for="@next" value="" />
+								<p:selectOneMenu id="option"
+									value="#{selectOneMenuView.selectedOption}">
+									<f:selectItem itemLabel="Selecione um dia" itemValue="" />
+									<f:selectItem itemLabel="01" itemValue="01" />
+									<f:selectItem itemLabel="02" itemValue="02" />
+									<f:selectItem itemLabel="03" itemValue="03" />
+									<f:selectItem itemLabel="04" itemValue="04" />
+									<f:selectItem itemLabel="05" itemValue="05" />
+									<f:selectItem itemLabel="06" itemValue="06" />
+									<f:selectItem itemLabel="07" itemValue="07" />
+									<f:selectItem itemLabel="08" itemValue="08" />
+									<f:selectItem itemLabel="09" itemValue="09" />
+									<f:selectItem itemLabel="10" itemValue="10" />
+									<f:selectItem itemLabel="11" itemValue="11" />
+									<f:selectItem itemLabel="12" itemValue="12" />
+									<f:selectItem itemLabel="13" itemValue="13" />
+									<f:selectItem itemLabel="14" itemValue="14" />
+									<f:selectItem itemLabel="15" itemValue="15" />
+									<f:selectItem itemLabel="16" itemValue="16" />
+									<f:selectItem itemLabel="17" itemValue="17" />
+									<f:selectItem itemLabel="18" itemValue="18" />
+									<f:selectItem itemLabel="19" itemValue="19" />
+									<f:selectItem itemLabel="20" itemValue="20" />
+									<f:selectItem itemLabel="21" itemValue="21" />
+									<f:selectItem itemLabel="22" itemValue="22" />
+									<f:selectItem itemLabel="23" itemValue="23" />
+									<f:selectItem itemLabel="24" itemValue="24" />
+									<f:selectItem itemLabel="25" itemValue="25" />
+									<f:selectItem itemLabel="26" itemValue="26" />
+									<f:selectItem itemLabel="27" itemValue="27" />
+									<f:selectItem itemLabel="28" itemValue="28" />
+									<f:selectItem itemLabel="29" itemValue="29" />
+									<f:selectItem itemLabel="30" itemValue="30" />
+									<f:selectItem itemLabel="31" itemValue="31" />
+									<f:facet name="footer">
+										<p:divider styleClass="mt-0" />
+										<h:outputText value="31 opções" style="font-weight:bold;" />
+									</f:facet>
+								</p:selectOneMenu>
+							</div>
+						</div>
+					</h:form>
+				</div>
+
+				</h:outputLabel>
+
+
+
+				<h:outputLabel value="Horário: " for="horario_Agendamento"></h:outputLabel>
+				<h:outputLabel>
+				
+				<div class="card">
+					<h:form>
+
+						<div class="ui-fluid formgrid grid">
+							<div class="field col-12 md:col-4">
+								<p:outputLabel for="@next" value="" />
+								<p:selectOneMenu id="option"
+									value="#{selectOneMenuView.selectedOption}">
+									<f:selectItem itemLabel="Selecione um horário" itemValue="" />
+									<f:selectItem itemLabel="10:00" itemValue="10:00" />
+									<f:selectItem itemLabel="10:30" itemValue="10:30" />
+									<f:selectItem itemLabel="11:00" itemValue="11:00" />
+									<f:selectItem itemLabel="11:30" itemValue="11:30" />
+									<f:selectItem itemLabel="14:00" itemValue="14:00" />
+									<f:selectItem itemLabel="14:30" itemValue="14:30" />
+									<f:selectItem itemLabel="15:00" itemValue="15:00" />
+									<f:selectItem itemLabel="15:30" itemValue="15:30" />
+									<f:facet name="footer">
+										<p:divider styleClass="mt-0" />
+										<h:outputText value="8 opções" style="font-weight:bold;" />
+									</f:facet>
+								</p:selectOneMenu>
+							</div>
+						</div>
+					</h:form>
+				</div>
+
+				</h:outputLabel>
+				
+				<h:outputLabel value="Nome do Paciente: " for="nomePaciente_Agendamento"></h:outputLabel>
+				<p:inputMask id="nomePaciente_Agendamento" value=""></p:inputMask>
+
+				<h:outputLabel value="Telefone: " for="telefone_Agendamento"></h:outputLabel>
+				<p:inputMask id="telefone_Agendamento" value=""
+					mask="(99)99999-9999"></p:inputMask>
+
+				<h:outputLabel value="E-mail: " for="email_Agendamento"></h:outputLabel>
+				<p:inputText id="email_Agendamento" value=""></p:inputText>
+
+
+				<h:outputLabel value="Observações: " for="observacoes_Agendamento"></h:outputLabel>
+				<p:inputText id="observacoes_Agendamento" value=""></p:inputText>
+
+				<p:commandButton id="btnEnviar" value="Enviar"></p:commandButton>
+
+			</p:panelGrid>
+
+		</p:fieldset>
+
+
+
+	</h:form>
+</h:body>
+
+
+</html>
